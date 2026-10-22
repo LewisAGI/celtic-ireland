@@ -1,4 +1,4 @@
-import { entryTitle, isExample, isMapped } from '../content';
+import { entryTitle, exampleBanner, isMapped } from '../content';
 import type { Atlas, Entry } from '../types';
 import { Badge } from './Badge';
 
@@ -6,15 +6,19 @@ export function EntryCard({
   entry,
   atlas,
   focused,
+  match,
   onChoose,
 }: {
   entry: Entry;
   atlas: Atlas;
   focused?: boolean;
+  /** null while no period filter is set. */
+  match?: boolean | null;
   onChoose?: () => void;
 }) {
   const title = entryTitle(entry);
   const mapped = isMapped(entry);
+  const banner = exampleBanner(entry);
   return (
     <article
       id={`entry-${entry.id}`}
@@ -25,6 +29,7 @@ export function EntryCard({
       data-focus={focused ? 'true' : 'false'}
       data-figure={entry.figure_type}
       data-year={entry.year}
+      data-match={match == null ? 'all' : match ? 'true' : 'false'}
     >
       {title ? (
         <h2 className="entry-title">
@@ -38,7 +43,7 @@ export function EntryCard({
         </h2>
       ) : null}
       <Badge label={entry.label} />
-      {isExample(entry) ? <p className="example-data">Example data</p> : null}
+      {banner ? <p className="example-data">{banner}</p> : null}
       <p className="entry-text">{entry.text}</p>
       {entry.uncertainty ? (
         <p className="qualifier" data-field="uncertainty">

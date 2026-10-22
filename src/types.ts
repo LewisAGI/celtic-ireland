@@ -67,4 +67,22 @@ export type ViewMode = 'archaeology' | 'myth' | 'present';
 
 export type PeriodId = 'neolithic' | 'iron' | 'medieval';
 
-export type PanelId = 'debate' | 'places' | 'cycles' | 'texts' | 'people' | 'timeline' | 'reading' | 'sources';
+export type PanelId =
+  | 'debate'
+  | 'places'
+  | 'place'
+  | 'cycles'
+  | 'story'
+  | 'texts'
+  | 'text'
+  | 'people'
+  | 'person'
+  | 'timeline'
+  | 'event'
+  | 'reading'
+  | 'glossary'
+  | 'compare'
+  | 'search'
+  | 'sources';
+
+export type Popout = 'layers' | 'periods' | 'search' | 'compare' | null;

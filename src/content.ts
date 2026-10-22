@@ -69,6 +69,11 @@ export function isExample(entry: Entry): boolean {
   return entry.status === 'placeholder' || entry.status === 'example';
 }
 
+/** Visible label for placeholder or example rows. Sourced entries stay unmarked. */
+export function exampleBanner(entry: Entry): 'Example data' | null {
+  return isExample(entry) ? 'Example data' : null;
+}
+
 export function isMapped(entry: Entry): entry is MappedEntry {
   return entry.coords != null && Number.isFinite(entry.coords.lat) && Number.isFinite(entry.coords.lon);
 }
@@ -79,6 +84,39 @@ export function entryTitle(entry: Entry): string {
   if (colon > 0 && colon <= 80) return entry.text.slice(0, colon).trim();
   const head = entry.text.split(' - ')[0].trim();
   return head.length <= 80 ? head : head.slice(0, 72).trim();
+}
+
+/** Title without a parenthetical catalogue qualifier. */
+export function shortTitle(entry: Entry): string {
+  return entryTitle(entry).split('(')[0].trim();
+}
+
+export function findEntry(atlas: Atlas, id: string): Entry | null {
+  for (const section of atlas.sections) {
+    const found = section.entries.find((entry) => entry.id === id);
+    if (found) return found;
+  }
+  return null;
+}
+
+export function entrySection(atlas: Atlas, id: string): string | null {
+  return atlas.sections.find((section) => section.entries.some((entry) => entry.id === id))?.id ?? null;
+}
+
+export function formatYear(year: number): string {
+  if (year < 0) return `${Math.abs(year)} BCE`;
+  return String(year);
+}
+
+/**
+ * The timeline may show a year only when that number is already in the pack sentence.
+ * A sort key such as tl5's -300 is not displayed as if the source had dated it.
+ */
+export function timelineLabel(entry: Entry): string | null {
+  if (entry.year == null) return null;
+  const digits = String(Math.abs(entry.year));
+  if (!entry.text.includes(digits)) return null;
+  return formatYear(entry.year);
 }
 
 export function allEntries(atlas: Atlas): Entry[] {

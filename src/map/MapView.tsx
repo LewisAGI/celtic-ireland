@@ -13,6 +13,8 @@ interface MapViewProps {
   selectedId: string | null;
   sheet: boolean;
   expanded: boolean;
+  wide: boolean;
+  tall: boolean;
   onSelect: (id: string | null) => void;
   onReady: () => void;
 }
@@ -24,16 +26,16 @@ interface Pin {
   marker: Marker;
 }
 
-export function MapView({ places, view, period, selectedId, sheet, expanded, onSelect, onReady }: MapViewProps) {
+export function MapView({ places, view, period, selectedId, sheet, expanded, wide, tall, onSelect, onReady }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const pinsRef = useRef<Pin[]>([]);
   const readyRef = useRef(false);
   const easedRef = useRef<string | null>(null);
-  const stateRef = useRef({ places, view, period, selectedId, sheet, expanded });
+  const stateRef = useRef({ places, view, period, selectedId, sheet, expanded, wide, tall });
   const onSelectRef = useRef(onSelect);
   const onReadyRef = useRef(onReady);
-  stateRef.current = { places, view, period, selectedId, sheet, expanded };
+  stateRef.current = { places, view, period, selectedId, sheet, expanded, wide, tall };
   onSelectRef.current = onSelect;
   onReadyRef.current = onReady;
 
@@ -41,7 +43,7 @@ export function MapView({ places, view, period, selectedId, sheet, expanded, onS
     const container = containerRef.current;
     if (!container) return;
     const initial = stateRef.current;
-    const { map, ready } = mountGlobe(container, mapPadding(initial.sheet, initial.expanded));
+    const { map, ready } = mountGlobe(container, mapPadding(initial.sheet, initial.expanded, initial.wide, initial.tall));
     mapRef.current = map;
     window.__celticMap = map;
     let cancelled = false;
@@ -76,13 +78,13 @@ export function MapView({ places, view, period, selectedId, sheet, expanded, onS
   useEffect(() => {
     if (!readyRef.current) return;
     apply();
-  }, [places, view, period, selectedId, sheet, expanded]);
+  }, [places, view, period, selectedId, sheet, expanded, wide, tall]);
 
   function apply() {
     const map = mapRef.current;
     if (!map || !readyRef.current) return;
     const state = stateRef.current;
-    const padding = mapPadding(state.sheet, state.expanded);
+    const padding = mapPadding(state.sheet, state.expanded, state.wide, state.tall);
     map.setPadding(padding);
     syncPins(map, state.places, state.view, state.period, state.selectedId);
     const selected = state.places.find((place) => place.id === state.selectedId);

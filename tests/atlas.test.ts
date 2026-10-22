@@ -6,6 +6,8 @@ import {
   badgeFor,
   characterLinks,
   debateEntries,
+  exampleBanner,
+  findEntry,
   isExample,
   isMapped,
   labelNote,
@@ -17,6 +19,7 @@ import {
   presentPrimary,
   sectionEntries,
   timelineEntries,
+  timelineLabel,
   unmappedEntries,
   validateAtlas,
   visiblePins,
@@ -153,8 +156,12 @@ describe('v3 pack', () => {
     const newgrange = positions.get('pl17')!;
     expect(boyne.offsetX === newgrange.offsetX && boyne.offsetY === newgrange.offsetY).toBe(false);
     expect(boyne.lat).toBe(points.find((point) => point.id === 'pl1')!.lat);
-    expect(positions.get('pl2')!.offsetX).toBe(0);
-    expect(positions.get('pl2')!.offsetY).toBe(0);
+    expect(Math.hypot(boyne.offsetX - newgrange.offsetX, boyne.offsetY - newgrange.offsetY)).toBeGreaterThanOrEqual(44);
+    const skellig = positions.get('pl2')!;
+    const michael = positions.get('pl34')!;
+    expect(Math.hypot(skellig.offsetX - michael.offsetX, skellig.offsetY - michael.offsetY)).toBeGreaterThanOrEqual(44);
+    expect(positions.get('pl6')!.offsetX).toBe(0);
+    expect(positions.get('pl6')!.offsetY).toBe(0);
   });
 
   it('badges the Celts debate as abstract-only and keeps the verify qualifier', () => {
@@ -268,6 +275,16 @@ describe('v3 pack', () => {
         atlas.sources,
       ),
     ).toThrow(/missing source/);
+  });
+
+  it('labels placeholder rows as example data and hides undated sort keys', () => {
+    const sourced = sectionEntries(atlas, 'history')[0];
+    expect(exampleBanner(sourced)).toBeNull();
+    expect(exampleBanner({ ...sourced, status: 'placeholder' })).toBe('Example data');
+    expect(exampleBanner({ ...sourced, status: 'example' })).toBe('Example data');
+    expect(timelineLabel(findEntry(atlas, 'tl1')!)).toBe('3800 BCE');
+    expect(timelineLabel(findEntry(atlas, 'tl5')!)).toBeNull();
+    expect(timelineLabel(findEntry(atlas, 'tl12')!)).toBe('1993');
   });
 
   it('drops overlapping labels after the first', () => {

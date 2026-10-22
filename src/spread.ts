@@ -1,6 +1,7 @@
 /** Near-duplicate monuments, in kilometres, are drawn apart in screen pixels. */
 export const COLOCATION_KM = 0.4;
-export const SPREAD_SEPARATION_PX = 36;
+/** Far enough apart that 44px touch targets do not cover each other. */
+export const SPREAD_SEPARATION_PX = 48;
 
 export interface SpreadPoint {
   id: string;

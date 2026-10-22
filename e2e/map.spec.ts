@@ -44,7 +44,14 @@ test('map, debate, and only the coordinated sites', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'The ‘Celts’ label' })).toBeVisible();
   await expect(page.locator('#entry-h1')).toContainText('Celtoscepticism');
   await expect(page.locator('.badge[data-badge="abstract-only"]').first()).toBeVisible();
-  await expect(page.locator('.pin')).toHaveCount(7);
+  await expect(page.locator('.pin')).toHaveCount(32);
+  const icons = page.locator('.icon-button');
+  const iconCount = await icons.count();
+  expect(iconCount).toBeGreaterThan(0);
+  for (let index = 0; index < iconCount; index += 1) {
+    expect((await icons.nth(index).innerText()).trim()).toBe('');
+    await expect(icons.nth(index)).toHaveAttribute('aria-label', /.+/);
+  }
   await expect(page.locator('.pin[data-id="pl9"]')).toHaveCount(1);
   await expect(page.locator('.pin[data-id="pl39"]')).toHaveCount(1);
   await expect(page.locator('.pin[data-id="pl10"]')).toHaveCount(0);
@@ -90,9 +97,12 @@ test('cycles, timeline, layers, and the sources notice', async ({ page }) => {
   await expect(page.locator('#entry-tl1')).toContainText('Céide');
   await expect(page.locator('#entry-tl1')).toContainText('3800');
   await expect(page.locator('[data-timeline="tl1"]')).toHaveAttribute('data-year', '-3800');
+  await expect(page.locator('.period-row')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Periods' }).click();
   await page.getByRole('button', { name: 'Neolithic' }).click();
   await expect(page.locator('.pin[data-id="pl1"]')).not.toHaveClass(/is-dimmed/);
   await expect(page.locator('.pin[data-id="pl2"]')).toHaveClass(/is-dimmed/);
+  await page.getByRole('button', { name: 'Periods' }).click();
   await page.getByRole('button', { name: 'Neolithic' }).click();
 
   await page.getByRole('button', { name: 'Layers' }).click();
@@ -157,6 +167,49 @@ test('a long press shows the icon label on touch', async ({ page }, testInfo) =>
   await zoom.dispatchEvent('pointerdown', { pointerType: 'touch', bubbles: true });
   await expect(zoom).toHaveClass(/is-long-tip/, { timeout: 2000 });
   await zoom.dispatchEvent('pointerup', { pointerType: 'touch', bubbles: true });
+});
+
+test('search, glossary, story, site, and comparison', async ({ page }) => {
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByRole('textbox', { name: 'Search' }).fill('Céide');
+  await expect(page.locator('[data-search-hit="pl27"]')).toBeVisible();
+  await expect(page.locator('[data-search-hit="tl1"]')).toBeVisible();
+  await expect(page.locator('#search-results')).not.toContainText('Example data');
+  await page.locator('[data-search-hit="pl27"] button').click();
+  await expect(page).toHaveURL(/#place\/pl27$/);
+  await expect(page.locator('#entry-pl27')).toContainText('Céide Fields');
+  await expect(page.locator('[data-cross="tl1"]')).toBeVisible();
+
+  await page.getByRole('button', { name: 'Glossary' }).click();
+  await expect(page).toHaveURL(/#glossary$/);
+  await expect(page.locator('#glossary')).toContainText('Celtoscepticism');
+  await expect(page.locator('#glossary')).toContainText('Mythological Cycle');
+  await expect(page.locator('body')).not.toContainText('pronunciation');
+
+  await page.getByRole('button', { name: 'Cycles' }).click();
+  await page.locator('#entry-c2 .text-button').click();
+  await expect(page).toHaveURL(/#story\/c2$/);
+  await expect(page.locator('[data-cross="t6"]')).toBeVisible();
+  await page.locator('[data-cross="t6"]').click();
+  await expect(page.locator('[data-text-link="t6"]')).toContainText('Academic use only');
+  await expect(page.locator('body')).not.toContainText(LEINSTER);
+
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('[data-pair="pl1:pl17"]').click();
+  await expect(page.locator('#compare-view')).toContainText('Brú na Bóinne');
+  await expect(page.locator('#compare-view')).toContainText('Newgrange');
+  await expect(page.locator('body')).not.toContainText('pp.101-265');
+});
+
+test('security headers', async ({ page }) => {
+  const response = await page.goto('/');
+  expect(response?.headers()['x-content-type-options']).toBe('nosniff');
+  expect(response?.headers()['referrer-policy']).toBe('strict-origin-when-cross-origin');
+  const policy = response?.headers()['content-security-policy'] ?? '';
+  expect(policy).toContain("default-src 'self'");
+  expect(policy).toContain('worker-src');
+  expect(policy).toContain('https://gibs.earthdata.nasa.gov');
+  await page.locator('#app[data-ready="true"]').waitFor();
 });
 
 async function expandIfNeeded(page: Page) {

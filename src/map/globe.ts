@@ -52,10 +52,10 @@ export function mountGlobe(container: HTMLElement, padding: PaddingOptions): {
   return { map, ready };
 }
 
-export function mapPadding(sheet: boolean, expanded: boolean): PaddingOptions {
-  if (!sheet) return { top: 56, bottom: 28, left: 440, right: 84 };
-  const bottom = expanded ? Math.round(window.innerHeight * 0.46) : window.innerHeight < 500 ? 108 : 168;
-  return { top: 64, bottom, left: 12, right: 76 };
+export function mapPadding(sheet: boolean, expanded: boolean, wide = false, tall = false): PaddingOptions {
+  if (!sheet) return { top: 56, bottom: 28, left: wide ? 720 : 460, right: 88 };
+  const ratio = tall && expanded ? 0.7 : expanded ? 0.5 : window.innerHeight < 500 ? 0.36 : 0.42;
+  return { top: 72, bottom: Math.round(window.innerHeight * ratio), left: 12, right: 16 };
 }
 
 function mapStyle(): StyleSpecification {

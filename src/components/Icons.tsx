@@ -122,11 +122,46 @@ export function IconNow() {
   );
 }
 
-export function IconChevron({ direction }: { direction: 'up' | 'down' }) {
-  const d = direction === 'up' ? 'M6 14l6-6 6 6' : 'M6 10l6 6 6-6';
+export function IconChevron({ direction }: { direction: 'up' | 'down' | 'left' }) {
+  const d = direction === 'up' ? 'M6 14l6-6 6 6' : direction === 'left' ? 'M14 6l-6 6 6 6' : 'M6 10l6 6 6-6';
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d={d} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function IconSearch() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="5.5" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      <path d="M15.5 15.5L20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function IconFilter() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function IconGlossary() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 5h8.5A2.5 2.5 0 0 1 17 7.5V19H8.2A2.2 2.2 0 0 0 6 21V5z" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      <path d="M9 9h5M9 12.5h5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function IconCompare() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="4" y="5" width="6.5" height="14" rx="1.2" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      <rect x="13.5" y="5" width="6.5" height="14" rx="1.2" fill="none" stroke="currentColor" strokeWidth="1.7" />
     </svg>
   );
 }
