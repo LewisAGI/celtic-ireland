@@ -1,0 +1,5 @@
+- Interactive map of sites (UNESCO coords) with myth overlays
+- Cycle explorer: character graph (Lug, Cú Chulainn, Medb, Fionn)
+- "Myth vs archaeology" toggle explaining the Celts debate
+- Irish-language pronunciation audio for names
+- Timeline Neolithic -> early medieval
