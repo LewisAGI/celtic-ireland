@@ -1,5 +1,5 @@
-import { badgeFor, labelNote } from '../content';
-import type { Badge as BadgeKind } from '../types';
+import { entryBadge, labelNote } from '../content';
+import type { Badge as BadgeKind, Entry } from '../types';
 
 const BADGE_TEXT: Record<BadgeKind, string> = {
   evidence: 'evidence',
@@ -8,9 +8,9 @@ const BADGE_TEXT: Record<BadgeKind, string> = {
   'unverified-detail': 'unverified detail',
 };
 
-export function Badge({ label, tale }: { label: string; tale?: string | null }) {
-  const kind = badgeFor(label);
-  const note = labelNote(label);
+export function Badge({ entry, tale }: { entry: Entry; tale?: string | null }) {
+  const kind = entryBadge(entry);
+  const note = labelNote(entry.label);
   return (
     <p className="badge-row">
       <span className={`badge badge-${kind}`} data-badge={kind}>

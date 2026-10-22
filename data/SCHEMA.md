@@ -57,7 +57,7 @@ The raw `label` is kept. The badge is one of `evidence`, `inference`, `abstract-
 
 `source_format` is the string the decimal pair was taken from. UNESCO values are DMS, for example `N53 41 40.9 W6 28 31.8`, and those decimals are site centroids. National Monuments Service “Monuments to Visit” points are the published decimals (22 mapped places cite `nms-mtv`).
 
-32 places are pinned. Eight are not: `pl3`, `pl4`, `pl10`, `pl11`, `pl12`, `pl13`, `pl15`, `pl16`. Tara (`pl9`, `pl19`) is pinned. The older Navan Fort note `pl10` has no coordinates; `pl39` is the converted Irish Grid reference and is labelled inference. Carrowkeel Cairn F (`pl40`) is the same kind of conversion, also labelled inference. Rathcroghan (`pl8`) is labelled inference because the pack sentence marks Medb’s Cruachan as an inference. The Children of Lir exile places (`pl11`, `pl12`, `pl13`) are marked “in the tale”. Lough Derravaragh still has no coordinates.
+32 places are pinned. Eight are not: `pl3`, `pl4`, `pl10`, `pl11`, `pl12`, `pl13`, `pl15`, `pl16`. Tara (`pl9`, `pl19`) is pinned. The older Navan Fort note `pl10` has no coordinates; `pl39` is the converted Irish Grid reference and is labelled inference. Carrowkeel Cairn F (`pl40`) is the same kind of conversion, also labelled inference. Rathcroghan (`pl8`) keeps the pack label `evidence`; the interface badges it inference because the sentence ends in that mark. The Children of Lir exile places (`pl4`, `pl11`, `pl12`, `pl13`) are marked “in the tale”. Lough Derravaragh still has no coordinates. `content.json` is the v3 pack file, unchanged.
 
 ### Periods
 

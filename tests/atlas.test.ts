@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import contentFile from '../data/content.json?raw';
 import {
   LEINSTER_SOURCE,
   allEntries,
@@ -6,6 +7,7 @@ import {
   badgeFor,
   characterLinks,
   debateEntries,
+  entryBadge,
   exampleBanner,
   findEntry,
   isExample,
@@ -173,7 +175,11 @@ describe('v3 pack', () => {
     expect(labelNote(debate[0].label)).toMatch(/not read/);
     const cooley = sectionEntries(atlas, 'places').find((entry) => entry.id === 'pl16')!;
     expect(badgeFor(cooley.label)).toBe('inference');
-    expect(badgeFor(findEntry(atlas, 'pl8')!.label)).toBe('inference');
+    const rathcroghan = findEntry(atlas, 'pl8')!;
+    expect(rathcroghan.label).toBe('evidence');
+    expect(rathcroghan.text.trim().endsWith('- inference).')).toBe(true);
+    expect(entryBadge(rathcroghan)).toBe('inference');
+    expect(badgeFor(rathcroghan.label)).toBe('evidence');
     const unverified = ['pe1', 'pe2', 'pe5', 'pe7', 'pe9', 'pe10'];
     unverified.forEach((id) => {
       const entry = findEntry(atlas, id)!;
@@ -185,7 +191,7 @@ describe('v3 pack', () => {
     expect(badgeFor(findEntry(atlas, 'pe3')!.label)).toBe('evidence');
     expect(labelNote(findEntry(atlas, 'pe3')!.label)).toBeNull();
     expect(badgeFor('inference (abstract-level)')).toBe('abstract-only');
-    ['pl11', 'pl12', 'pl13'].forEach((id) => expect(taleMark(findEntry(atlas, id)!)).toBe('in the tale'));
+    ['pl4', 'pl11', 'pl12', 'pl13'].forEach((id) => expect(taleMark(findEntry(atlas, id)!)).toBe('in the tale'));
     expect(taleMark(findEntry(atlas, 'pl9')!)).toBeNull();
     expect(taleMark(findEntry(atlas, 'pl8')!)).toBeNull();
   });
@@ -290,6 +296,11 @@ describe('v3 pack', () => {
     ).toThrow(/missing source/);
   });
 
+  it('keeps content.json byte-identical to the v3 pack', async () => {
+    const digest = await sha256Hex(contentFile);
+    expect(digest).toBe('8c8531084942e6f4c299e951ad65f941476d509f193fef639e457d0c89654ba6');
+  });
+
   it('labels placeholder rows as example data and hides undated sort keys', () => {
     const sourced = sectionEntries(atlas, 'history')[0];
     expect(exampleBanner(sourced)).toBeNull();
@@ -309,3 +320,9 @@ describe('v3 pack', () => {
     expect([...visible]).toEqual(['a', 'c']);
   });
 });
+
+/** SHA-256 of celtic-ireland/content.json inside pack-celtic-ireland-v3.tgz. */
+async function sha256Hex(text: string): Promise<string> {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+}

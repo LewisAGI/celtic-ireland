@@ -80,7 +80,7 @@ test('places without coordinates stay in the list', async ({ page }) => {
   await expect(page.locator('#entry-pl10 .entry-text')).toContainText('Navan Fort / Emain Macha');
   await expect(page.locator('[data-entry="pl16"] .badge[data-badge="inference"]')).toBeVisible();
   await expect(page.locator('[data-entry="pl8"] .badge[data-badge="inference"]')).toBeVisible();
-  for (const id of ['pl11', 'pl12', 'pl13']) {
+  for (const id of ['pl4', 'pl11', 'pl12', 'pl13']) {
     await expect(page.locator(`[data-entry="${id}"] .badge[data-badge="in-the-tale"]`)).toHaveText('in the tale');
   }
   await page.locator('.pin[data-id="pl1"]').click({ force: true });

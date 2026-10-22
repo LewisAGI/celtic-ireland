@@ -42,7 +42,7 @@ export function EntryCard({
           )}
         </h2>
       ) : null}
-      <Badge label={entry.label} tale={taleMark(entry)} />
+      <Badge entry={entry} tale={taleMark(entry)} />
       {banner ? <p className="example-data">{banner}</p> : null}
       <p className="entry-text">{entry.text}</p>
       {entry.uncertainty ? (

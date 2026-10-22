@@ -170,7 +170,7 @@ export function GlossaryPage({ atlas, onOpen }: { atlas: Atlas; onOpen: (id: str
             <button type="button" className="text-button" onClick={() => onOpen(item.entryId)}>
               {item.term}
             </button>
-            <Badge label={entry.label} tale={taleMark(entry)} />
+            <Badge entry={entry} tale={taleMark(entry)} />
             {banner ? <p className="example-data">{banner}</p> : null}
             <p className="entry-text">{item.gloss}</p>
           </li>
@@ -209,7 +209,7 @@ export function SearchPage({
                   <button type="button" className="text-button" onClick={() => onOpen(entry.id)}>
                     {resultLabel(entry, atlas.sources)}
                   </button>
-                  <Badge label={entry.label} tale={taleMark(entry)} />
+                  <Badge entry={entry} tale={taleMark(entry)} />
                   {banner ? <p className="example-data">{banner}</p> : null}
                 </li>
               );

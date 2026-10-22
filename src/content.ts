@@ -66,6 +66,15 @@ export function badgeFor(label: string): Badge {
 }
 
 /**
+ * The pack label is kept. A sentence that ends in the inference mark is still
+ * badged inference, which is how Rathcroghan (pl8) is shown.
+ */
+export function entryBadge(entry: Entry): Badge {
+  if (/- inference\)\.?$/.test(entry.text.trim())) return 'inference';
+  return badgeFor(entry.label);
+}
+
+/**
  * Public qualifier beside the badge.
  * The verify-before-publishing instruction is replaced with UNVERIFIED_QUALIFIER.
  */
@@ -80,7 +89,8 @@ export function labelNote(label: string): string | null {
 
 /** The Children of Lir exile places are settings in the tale, not surveyed pins. */
 export function taleMark(entry: Entry): 'in the tale' | null {
-  return /exile of the Children of Lir/i.test(entry.text) ? 'in the tale' : null;
+  if (/exile of the Children of Lir|Children of Lir's final exile/i.test(entry.text)) return 'in the tale';
+  return null;
 }
 
 export function isExample(entry: Entry): boolean {
