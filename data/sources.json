@@ -1,0 +1,258 @@
+[
+ {
+  "id": "enc-myth",
+  "title": "Myth and Saga",
+  "author_org": "Encyclopedia.com (Encyclopedia of Irish History and Culture)",
+  "url": "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/myth-and-saga",
+  "date_accessed": "2026-10-22",
+  "quality": "Scholarly reference reprint"
+ },
+ {
+  "id": "oxref-myth",
+  "title": "Mythological cycle",
+  "author_org": "Oxford Reference (Oxford Dictionary of Celtic Mythology)",
+  "url": "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100220520",
+  "date_accessed": "2026-10-22",
+  "quality": "Scholarly; snippet only (paywalled)"
+ },
+ {
+  "id": "tcd-myth",
+  "title": "Upon the Wild Waves: Irish Myths",
+  "author_org": "Trinity College Dublin Library",
+  "url": "https://www.tcd.ie/library/exhibitions/wild-waves/irish_myths.php",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic library exhibition"
+ },
+ {
+  "id": "unc-myth",
+  "title": "Irish Folklore & Mythology: Introduction",
+  "author_org": "UNC School of Information and Library Science pathfinder",
+  "url": "https://ils.unc.edu/dpr/path/irishfolklore/intro.htm",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic pathfinder; older, secondary"
+ },
+ {
+  "id": "sibbet",
+  "title": "Celtoscepticism article (Studia Celtica Fennica)",
+  "author_org": "Studia Celtica Fennica (journal.fi)",
+  "url": "https://journal.fi/scf/article/download/60981/38889/111523",
+  "date_accessed": "2026-10-22",
+  "quality": "Peer-reviewed; read via search summary only"
+ },
+ {
+  "id": "oup-iron",
+  "title": "Iron Age Ireland: Continuity, Change, and Identity",
+  "author_org": "Oxford Academic (Atlantic Europe in the First Millennium BC)",
+  "url": "https://academic.oup.com/book/7223/chapter/151903839",
+  "date_accessed": "2026-10-22",
+  "quality": "Peer-reviewed chapter; abstract-level"
+ },
+ {
+  "id": "cam-celt",
+  "title": "An Alternative to 'Celtic from the East' and 'Celtic from the West'",
+  "author_org": "Cambridge Archaeological Journal",
+  "url": "https://www.cambridge.org/core/journals/cambridge-archaeological-journal/article/an-alternative-to-celtic-from-the-east-and-celtic-from-the-west/4F186F087DD3BE66D535102484F8E8C3",
+  "date_accessed": "2026-10-22",
+  "quality": "Peer-reviewed; abstract-level"
+ },
+ {
+  "id": "unesco-boyne",
+  "title": "Brú na Bóinne",
+  "author_org": "UNESCO World Heritage Centre",
+  "url": "https://whc.unesco.org/en/list/659/",
+  "date_accessed": "2026-10-22",
+  "quality": "Intergovernmental"
+ },
+ {
+  "id": "unesco-skellig",
+  "title": "Sceilg Mhichíl",
+  "author_org": "UNESCO World Heritage Centre",
+  "url": "https://whc.unesco.org/en/list/757/",
+  "date_accessed": "2026-10-22",
+  "quality": "Intergovernmental"
+ },
+ {
+  "id": "unesco-royal",
+  "title": "The Royal Sites of Ireland (Tentative List)",
+  "author_org": "UNESCO World Heritage Centre / Ireland",
+  "url": "https://whc.unesco.org/en/tentativelists/5528/",
+  "date_accessed": "2026-10-22",
+  "quality": "Intergovernmental; state submission"
+ },
+ {
+  "id": "unesco-sligo",
+  "title": "The Passage Tomb Landscape of County Sligo (Tentative List)",
+  "author_org": "UNESCO World Heritage Centre / Ireland",
+  "url": "https://whc.unesco.org/en/tentativelists/6635/",
+  "date_accessed": "2026-10-22",
+  "quality": "State submission"
+ },
+ {
+  "id": "celt-list",
+  "title": "List of Published Texts",
+  "author_org": "CELT, University College Cork",
+  "url": "https://celt.ucc.ie/publishd.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic corpus; check each text's licence"
+ },
+ {
+  "id": "celt-t300010",
+  "title": "Cath Maige Tuired: The Second Battle of Mag Tuired",
+  "author_org": "Elisabeth A. Gray (tr.)",
+  "url": "https://celt.ucc.ie/published/T300010/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t300011",
+  "title": "The Second Battle of Moytura",
+  "author_org": "Whitley Stokes (tr., 1891, public domain)",
+  "url": "https://celt.ucc.ie/published/T300011/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t300012",
+  "title": "The Wooing of Étaín",
+  "author_org": "O. Bergin & R.I. Best (tr.)",
+  "url": "https://celt.ucc.ie/published/T300012/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t300014",
+  "title": "The Fate of the Children of Lir",
+  "author_org": "Eugene O'Curry (tr., 1863, public domain)",
+  "url": "https://celt.ucc.ie/published/T300014/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t301012",
+  "title": "Táin Bó Cúalnge Recension I",
+  "author_org": "Cecile O'Rahilly (tr.)",
+  "url": "https://celt.ucc.ie/published/T301012/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t301035",
+  "title": "Táin Bó Cúalnge from the Book of Leinster",
+  "author_org": "Cecile O'Rahilly (tr.) - CELT: academic/teaching use with consent",
+  "url": "https://celt.ucc.ie/published/T301035/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t301020a",
+  "title": "Deirdre [Longes mac nUislenn]",
+  "author_org": "Douglas Hyde (tr.)",
+  "url": "https://celt.ucc.ie/published/T301020A/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t301017a",
+  "title": "The Destruction of Da Derga's Hostel",
+  "author_org": "Whitley Stokes (tr., public domain)",
+  "url": "https://celt.ucc.ie/published/T301017A/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t303003",
+  "title": "The Death of Finn Mac Cumaill",
+  "author_org": "Kuno Meyer (tr.)",
+  "url": "https://celt.ucc.ie/published/T303003/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t303023",
+  "title": "The Boyish Exploits of Finn",
+  "author_org": "Kuno Meyer (tr.)",
+  "url": "https://celt.ucc.ie/published/T303023/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t303011",
+  "title": "The Quarrel between Finn and Oisín",
+  "author_org": "Kuno Meyer (tr.)",
+  "url": "https://celt.ucc.ie/published/T303011/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t303019",
+  "title": "The Enumeration of Finn's People",
+  "author_org": "Standish Hayes O'Grady (tr.)",
+  "url": "https://celt.ucc.ie/published/T303019/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t302018",
+  "title": "Buile Shuibhne (The Frenzy of Suibhne)",
+  "author_org": "J.G. O'Keeffe (tr., 1913)",
+  "url": "https://celt.ucc.ie/published/T302018/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t302000",
+  "title": "The Irish Ordeals, Cormac's Adventure in the Land of Promise",
+  "author_org": "Whitley Stokes (tr.)",
+  "url": "https://celt.ucc.ie/published/T302000/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "celt-t503001",
+  "title": "The Instructions of King Cormac Mac Airt (Tecosca Cormaic)",
+  "author_org": "Kuno Meyer (tr.)",
+  "url": "https://celt.ucc.ie/published/T503001/index.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic e-text (CELT); licence per text"
+ },
+ {
+  "id": "nms-mtv",
+  "title": "Monuments to Visit (open data, CSV with ITM and lat/long)",
+  "author_org": "National Monuments Service / heritagedata.maps.arcgis.com via data.gov.ie",
+  "url": "https://heritagedata.maps.arcgis.com/sharing/rest/content/items/c8a106fb003642159ebcfa5f19d3f9bc/data",
+  "date_accessed": "2026-10-22",
+  "quality": "Government open data; coordinates authoritative"
+ },
+ {
+  "id": "dfc-navan",
+  "title": "Navan Fort",
+  "author_org": "Department for Communities (NI)",
+  "url": "https://www.communities-ni.gov.uk/heritage-sites/navan-fort",
+  "date_accessed": "2026-10-22",
+  "quality": "Government; grid ref H 8470 4514 via search summary"
+ },
+ {
+  "id": "ia-silva",
+  "title": "Silva Gadelica vol. II (English translations), S.H. O'Grady 1892",
+  "author_org": "Internet Archive",
+  "url": "https://archive.org/details/silvagadelicaixx02ogra",
+  "date_accessed": "2026-10-22",
+  "quality": "Public domain; Acallamh translation pp.101-265 per UCC ISO"
+ },
+ {
+  "id": "ucc-iso-acallam",
+  "title": "Irish Sagas Online: Acallamh na Senórach sources",
+  "author_org": "University College Cork (ISO)",
+  "url": "https://iso.ucc.ie/Acallamh-senorach/Acallamh-senorach-sources.html",
+  "date_accessed": "2026-10-22",
+  "quality": "Academic"
+ },
+ {
+  "id": "ia-lge1",
+  "title": "Lebor Gabála Érenn vol. 1, ed. & tr. R.A.S. Macalister (Irish Texts Society)",
+  "author_org": "Internet Archive",
+  "url": "https://archive.org/details/leborgablare01macauoft",
+  "date_accessed": "2026-10-22",
+  "quality": "Scholarly translation; Macalister d.1950 so PD in EU/Ireland (life+70) - verify other jurisdictions"
+ }
+]

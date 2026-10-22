@@ -1,0 +1,1198 @@
+{
+ "meta": {
+  "pack": "celtic-ireland",
+  "version": 1,
+  "created": "2026-10-22"
+ },
+ "history": [
+  {
+   "id": "h1",
+   "text": "Scholarly debate: 'Celtoscepticism' (e.g. John Collis) rejects applying ethnic 'Celtic' labels to archaeological material such as La Tène artefacts, noting ancient writers did not call Irish or British peoples Celts; many scholars now treat 'Celtic' primarily as a linguistic category.",
+   "sources": [
+    "sibbet",
+    "cam-celt"
+   ],
+   "label": "evidence (from abstracts/summaries; full texts not read)",
+   "debate": true
+  },
+  {
+   "id": "h2",
+   "text": "Irish archaeology has largely moved away from a prehistoric 'Celtic invasion' model; the Iron Age shows continuity and regional identities.",
+   "sources": [
+    "oup-iron"
+   ],
+   "label": "evidence (abstract-level)",
+   "debate": true
+  },
+  {
+   "id": "h3",
+   "text": "Irish myths were transmitted orally then written down by Christian scribes in the early medieval period.",
+   "sources": [
+    "enc-myth",
+    "tcd-myth"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "h4",
+   "text": "The Royal Sites (Cashel, Dún Ailinne, Uisneach, Rathcroghan, Tara, plus Navan Fort/Emain Macha in NI) were sites of royal inauguration, ceremony and assembly for the provinces; Tara was seat of the kings of Meath and the high kings.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "h5",
+   "text": "The Royal Sites are described as large-scale Iron Age complexes with roots in the Neolithic, linked to myth and to the transition to Christianity and St Patrick.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "h6",
+   "text": "County Sligo holds about one hundred interconnected passage-tomb sites (Carrowmore and Carrowkeel foci, 23 km apart), infused with medieval Gaelic myth.",
+   "sources": [
+    "unesco-sligo"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "h7",
+   "text": "Lug's roots can be traced to the Gaulish god Lugos, whom Caesar equated with Mercury.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence"
+  }
+ ],
+ "cycles": [
+  {
+   "id": "c0",
+   "text": "The four-cycle division (Mythological, Ulster, Fenian, Kings/Historical) is a modern (19th-century) scholarly scheme; medieval compilers instead classified tales by title type (e.g. Táin = cattle raid).",
+   "sources": [
+    "enc-myth",
+    "oxref-myth"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "c1",
+   "text": "Mythological Cycle: Tuatha Dé Danann, Fomorians and legendary invasions; key texts Lebor Gabála Érenn, Cath Maige Tuired, Tochmarc Étaíne, and two of the 'Three Sorrows of Storytelling' (Children of Tuireann; Children of Lir). Hero Lug Lámfhota; leader Nuadu Airgetlám.",
+   "sources": [
+    "enc-myth",
+    "tcd-myth"
+   ],
+   "label": "evidence",
+   "name": "Mythological Cycle"
+  },
+  {
+   "id": "c2",
+   "text": "Ulster Cycle (earlier 'Red Branch'): centred on Cú Chulainn, King Conchobar and the Táin Bó Cúailnge, in which Medb of Connacht seeks the Donn Cuailnge (Brown Bull); includes Deirdre, the third Sorrow.",
+   "sources": [
+    "enc-myth",
+    "tcd-myth"
+   ],
+   "label": "evidence",
+   "name": "Ulster Cycle"
+  },
+  {
+   "id": "c3",
+   "text": "Fenian (Fianna/Ossianic) Cycle: Fionn mac Cumhaill and the Fianna; strong links to Gaelic Scotland.",
+   "sources": [
+    "enc-myth",
+    "tcd-myth",
+    "unc-myth"
+   ],
+   "label": "evidence",
+   "name": "Fenian Cycle"
+  },
+  {
+   "id": "c4",
+   "text": "Cycle of the Kings (Historical Cycle): tales of mythical, semi-historical and historical kings, roughly 3rd c. BC to 8th c. AD per UNC pathfinder.",
+   "sources": [
+    "unc-myth",
+    "tcd-myth"
+   ],
+   "label": "evidence",
+   "name": "Cycle of the Kings",
+   "uncertainty": "date range from secondary pathfinder"
+  },
+  {
+   "id": "c5",
+   "text": "Three Sorrows of Storytelling: Children of Tuireann and Children of Lir (Mythological Cycle) and Deirdre (Ulster Cycle).",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "c6",
+   "text": "In the Children of Lir, Aoife turns the children into swans at Loch Dairbhreach; they spend 300 years each at Loch Dairbhreach, Sruth na Maoile and Iorrus Domnann/Inis Gluairé.",
+   "sources": [
+    "celt-t300014"
+   ],
+   "label": "evidence"
+  }
+ ],
+ "places": [
+  {
+   "id": "pl1",
+   "text": "Brú na Bóinne (Knowth, Newgrange, Dowth) - Neolithic passage-tomb landscape on a bend of the River Boyne about 40 km north of Dublin; UNESCO 1993.",
+   "sources": [
+    "unesco-boyne"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.69469,
+    "lon": -6.4755,
+    "source_format": "N53 41 40.9 W6 28 31.8"
+   }
+  },
+  {
+   "id": "pl2",
+   "text": "Sceilg Mhichíl (Skellig Michael) - early medieval island monastery ~12 km off the Iveragh Peninsula, Co. Kerry; UNESCO 1996.",
+   "sources": [
+    "unesco-skellig"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 51.77194,
+    "lon": -10.53861,
+    "source_format": "N51 46 18.984 W10 32 18.996"
+   }
+  },
+  {
+   "id": "pl3",
+   "text": "Emain Macha (Co. Armagh) and the Hill of Tara (Co. Meath) are settings of the Ulster Cycle.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "coords": null,
+   "note": "coords not sourced in this pass"
+  },
+  {
+   "id": "pl4",
+   "text": "Children of Lir's final exile is placed on the Mayo coast.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl5",
+   "text": "Cashel: royal site of the kings of Munster.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 52.52139,
+    "lon": -7.88778,
+    "source_format": "N52 31 17 W7 53 16"
+   }
+  },
+  {
+   "id": "pl6",
+   "text": "Dún Ailinne: royal site of the kings of Leinster.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.1175,
+    "lon": -6.76389,
+    "source_format": "N53 7 3 W6 45 50"
+   }
+  },
+  {
+   "id": "pl7",
+   "text": "Hill of Uisneach: traditional navel of Ireland where the provinces met.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.48778,
+    "lon": -7.52861,
+    "source_format": "N53 29 16 W7 31 43"
+   }
+  },
+  {
+   "id": "pl8",
+   "text": "Rathcroghan Complex: royal site of the kings of Connacht (Medb's Cruachan in the Táin - inference).",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.77944,
+    "lon": -8.255,
+    "source_format": "N53 46 46 W8 15 18"
+   }
+  },
+  {
+   "id": "pl9",
+   "text": "Tara Complex: seat of kings of Meath and high kings; Ulster Cycle setting.",
+   "sources": [
+    "unesco-royal",
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.58583,
+    "lon": -6.56167,
+    "source_format": "N53 35 9 W6 33 42"
+   }
+  },
+  {
+   "id": "pl10",
+   "text": "Navan Fort / Emain Macha (Co. Armagh, NI): royal site of the Ulster kings and Ulster Cycle 'capital'.",
+   "sources": [
+    "unesco-royal",
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl11",
+   "text": "Loch Dairbhreach (Lough Derravaragh, inference for modern name): first 300-year exile of the Children of Lir.",
+   "sources": [
+    "celt-t300014"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl12",
+   "text": "Sruth na Maoile (Sea of Moyle) 'between Erinn and Albain': second 300-year exile of the Children of Lir.",
+   "sources": [
+    "celt-t300014"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl13",
+   "text": "Iorrus Domnann and Inis Gluairé (Erris, Co. Mayo): third exile of the Children of Lir.",
+   "sources": [
+    "celt-t300014",
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl14",
+   "text": "Carrowmore passage-tomb complex, Co. Sligo (UTM given by UNESCO: Carrowmore 51 E531369 N6011311; not converted).",
+   "sources": [
+    "unesco-sligo"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 54.2488,
+    "lon": -8.51857,
+    "source_format": "UTM 29N 531369,6011311 -> converted; cf. NMS Carrowmore 54.251089,-8.519975"
+   }
+  },
+  {
+   "id": "pl15",
+   "text": "Carrowkeel passage-tomb complex, Bricklieve Mountains, Co. Sligo.",
+   "sources": [
+    "unesco-sligo"
+   ],
+   "label": "evidence",
+   "coords": null
+  },
+  {
+   "id": "pl16",
+   "text": "Cúailnge (Cooley), Co. Louth: home of the Donn Cuailnge, object of the Táin (inference: location of Cooley not stated in cited snippet).",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "inference",
+   "coords": null
+  },
+  {
+   "id": "pl17",
+   "text": "Newgrange Passage Tomb (Megalithic tomb - passage tomb, Co. Meath): The great passage tomb mound of Newgrange built over 5,000 years ago during the middle of the Neolithic period (around 3200 BC) is one of a number of monuments which, together with the nearby passage tombs of Knowth and Dowth, form part of the ‘Brú na Bóinne’ UNESCO World Heritage Site.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.694734,
+    "lon": -6.475539,
+    "source_format": "NMS lat/long; SMR ME019-045----"
+   },
+   "myth_link": "Mythological (Brú na Bóinne)"
+  },
+  {
+   "id": "pl18",
+   "text": "Knowth Passage Tomb Cemetery (Megalithic tomb - passage tomb, Co. Meath): The great passage tomb cemetery of Knowth, built over 5,000 years ago during the middle of the Neolithic period (around 3200 BC), is one of a number of monuments which, together with the nearby passage tombs of Newgrange and Dowth, form part of ‘Brú na Bóinne’ UNESCO World Heritage Site.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.701217,
+    "lon": -6.491404,
+    "source_format": "NMS lat/long; SMR ME019-030001-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl19",
+   "text": "Hill of Tara (Graveyard, Co. Meath): Though best known as the seat of the High Kings of Ireland, the Hill of Tara has been an important site since the late Stone Age when a passage-tomb was constructed there.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.580379,
+    "lon": -6.610609,
+    "source_format": "NMS lat/long; SMR ME031-033075-"
+   },
+   "myth_link": "Kings/Ulster"
+  },
+  {
+   "id": "pl20",
+   "text": "Hill of Uisneach (Barrow - pond barrow, Co. Westmeath): A range of archaeological monuments on The Hill of Uisneach including ‘Lough Lugh’ marks the mythological and sacred centre of prehistoric Ireland, in modern day County Westmeath.  This ancient assembly site can be compared to other Royal centres in prehistoric Ireland including the Hill of Tara in Co.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.486925,
+    "lon": -7.565494,
+    "source_format": "NMS lat/long; SMR WM024-061----"
+   },
+   "myth_link": "Mythological"
+  },
+  {
+   "id": "pl21",
+   "text": "Rathcroghan (Mound, Co. Roscommon): Hidden within the tranquil scenery of North Co.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.802243,
+    "lon": -8.30414,
+    "source_format": "NMS lat/long; SMR RO022-057010-"
+   },
+   "myth_link": "Ulster (Medb, Táin)"
+  },
+  {
+   "id": "pl22",
+   "text": "Loughcrew Megalithic Cemetery (Megalithic tomb - passage tomb, Co. Meath): The Loughcrew Cairns, also known as the Hills of the Witch, are a group of Neolithic passage tombs dating to 3000 BC.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.744687,
+    "lon": -7.112315,
+    "source_format": "NMS lat/long; SMR ME015-012004-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl23",
+   "text": "Carrowmore Megalithic Cemetery (Megalithic tomb - passage tomb, Co. Sligo): This is the largest cemetery of megalithic tombs in Ireland and is also among the country's oldest, with monuments ranging from five and a half thousand to six and a half thousand years old.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 54.251089,
+    "lon": -8.519975,
+    "source_format": "NMS lat/long; SMR SL014-209001-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl24",
+   "text": "Rock of Cashel (Cathedral, Co. Tipperary South): A spectacular group of Medieval buildings set on an outcrop of limestone in the Golden Vale including the 12th century round tower, High Cross and Romanesque Chapel, 13th century Gothic cathedral, 15th century Castle and the restored Hall of the Vicars Choral.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 52.520076,
+    "lon": -7.890507,
+    "source_format": "NMS lat/long; SMR TS061-025003-"
+   },
+   "myth_link": "Kings"
+  },
+  {
+   "id": "pl25",
+   "text": "Dún Aonghasa (Cliff-edge fort, Co. Galway): Perched spectacularly on a cliff overlooking the Atlantic ocean, this is the largest of the prehistoric stone forts of the Aran Islands.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.125413,
+    "lon": -9.767076,
+    "source_format": "NMS lat/long; SMR GA110-039----"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl26",
+   "text": "The 'Grianán of Aileach' (Hillfort, Co. Donegal): On the summit of Greenan Mountain is the stone fort known as the Grianán of Aileach.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 55.023825,
+    "lon": -7.427658,
+    "source_format": "NMS lat/long; SMR DG047-012005-"
+   },
+   "myth_link": "Kings"
+  },
+  {
+   "id": "pl27",
+   "text": "Céide Fields (Field system, Co. Mayo): Beneath the wild boglands of North Mayo lies the Céide Fields, the most extensive Stone Age monument in the world, consisting of field systems, dwelling areas and megalithic tombs.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 54.297101,
+    "lon": -9.458322,
+    "source_format": "NMS lat/long; SMR MA006-032002-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl28",
+   "text": "Corlea Trackway (Road - class 1 togher, Co. Longford): The centre interprets an Iron Age bog road that was built in the year 148 B.C.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.612584,
+    "lon": -7.845718,
+    "source_format": "NMS lat/long; SMR LF022-058001-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl29",
+   "text": "Drombeg Stone Circle (Stone circle - multiple-stone, Co. Cork): Drombeg stone circle is dramatically situated on a rocky terrace with sweeping views over farmland to the Atlantic Ocean.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 51.564569,
+    "lon": -9.087035,
+    "source_format": "NMS lat/long; SMR CO143-051002-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl30",
+   "text": "Proleek Megalithic Tombs (Megalithic tomb - portal tomb, Co. Louth): Located to the south-west of the Cooley Mountains near the lower slopes of Black Mountain, Proleek portal tomb is one of the best-known and most iconic megalithic tombs in Ireland.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 54.037197,
+    "lon": -6.348297,
+    "source_format": "NMS lat/long; SMR LH004-074----"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl31",
+   "text": "Browneshill Megalithic Tomb (Megalithic tomb - portal tomb, Co. Carlow): Known as the ‘Browneshill dolmen’, because it is sited on a hill on which sits the former estate house of the Browne family, the remains of this megalithic tomb are well-preserved and the chamber faces down slope to the east.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 52.83753,
+    "lon": -6.88114,
+    "source_format": "NMS lat/long; SMR CW007-010----"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl32",
+   "text": "Clonmacnoise (Graveyard, Co. Offaly): An Early Christian site founded by St.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.326464,
+    "lon": -7.98574,
+    "source_format": "NMS lat/long; SMR OF005-004----"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl33",
+   "text": "Glendalough (Graveyard, Co. Wicklow): This early Christian ecclesiastical settlement was founded by St.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.010583,
+    "lon": -6.327291,
+    "source_format": "NMS lat/long; SMR WI023-008014-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl34",
+   "text": "Skellig Michael (Terrace, Co. Kerry): The magnificent Skellig Islands lie 8 miles (12 km) off the coast of Portmagee in South West Kerry.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 51.771999,
+    "lon": -10.538869,
+    "source_format": "NMS lat/long; SMR KE104A001105-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl35",
+   "text": "Reask Monastic Site (Ecclesiastical enclosure, Co. Kerry): Nothing is known about the history of the ancient church site at Reask situated on the spectacular Dingle Peninsula.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 52.167379,
+    "lon": -10.387698,
+    "source_format": "NMS lat/long; SMR KE042-060001-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl36",
+   "text": "Fore (Religious house - Benedictine monks, Co. Westmeath): Fore is situated in a marshy valley and takes its name from the Irish word fobhair, meaning a spring or a well.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.683915,
+    "lon": -7.227161,
+    "source_format": "NMS lat/long; SMR WM004-035010-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl37",
+   "text": "Mellifont Abbey (Religious house - Cistercian monks, Co. Louth): The first Cistercian monastery in Ireland founded in 1142 by St Malachy of Armagh, its most unusual feature is the octagonal Lavabo c.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 53.742266,
+    "lon": -6.466208,
+    "source_format": "NMS lat/long; SMR LH023-007002-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl38",
+   "text": "Ardfert (Cathedral, Co. Kerry): A monastery was founded here by St.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "coords": {
+    "lat": 52.328722,
+    "lon": -9.781736,
+    "source_format": "NMS lat/long; SMR KE020-046002-"
+   },
+   "myth_link": null
+  },
+  {
+   "id": "pl39",
+   "text": "Navan Fort / Eamhain Mhacha: grid ref H 8470 4514 (Irish Grid), converted to lat/long with pyproj (EPSG:29902).",
+   "sources": [
+    "dfc-navan",
+    "unesco-royal"
+   ],
+   "label": "evidence (grid ref) + inference (conversion)",
+   "coords": {
+    "lat": 54.34794,
+    "lon": -6.69824,
+    "source_format": "Irish Grid H 8470 4514 -> converted"
+   }
+  },
+  {
+   "id": "pl40",
+   "text": "Carrowkeel Cairn F, Co. Sligo: UNESCO gives Irish Grid E174936 N311386; converted with pyproj (EPSG:29902).",
+   "sources": [
+    "unesco-sligo"
+   ],
+   "label": "evidence + inference (conversion)",
+   "coords": {
+    "lat": 54.05112,
+    "lon": -8.38341,
+    "source_format": "Irish Grid 174936,311386 -> converted"
+   }
+  }
+ ],
+ "primary_texts": [
+  {
+   "id": "t1",
+   "text": "English translation: Cath Maige Tuired: The Second Battle of Mag Tuired — Elisabeth A. Gray (tr.). Cycle: Mythological.",
+   "sources": [
+    "celt-t300010",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Mythological",
+   "translator": "Elisabeth A. Gray (tr.)",
+   "url": "https://celt.ucc.ie/published/T300010/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t2",
+   "text": "English translation: The Second Battle of Moytura — Whitley Stokes (tr., 1891, public domain). Cycle: Mythological.",
+   "sources": [
+    "celt-t300011",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Mythological",
+   "translator": "Whitley Stokes (tr., 1891, public domain)",
+   "url": "https://celt.ucc.ie/published/T300011/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t3",
+   "text": "English translation: The Wooing of Étaín — O. Bergin & R.I. Best (tr.). Cycle: Mythological.",
+   "sources": [
+    "celt-t300012",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Mythological",
+   "translator": "O. Bergin & R.I. Best (tr.)",
+   "url": "https://celt.ucc.ie/published/T300012/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t4",
+   "text": "English translation: The Fate of the Children of Lir — Eugene O'Curry (tr., 1863, public domain). Cycle: Mythological.",
+   "sources": [
+    "celt-t300014",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Mythological",
+   "translator": "Eugene O'Curry (tr., 1863, public domain)",
+   "url": "https://celt.ucc.ie/published/T300014/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t5",
+   "text": "English translation: Táin Bó Cúalnge Recension I — Cecile O'Rahilly (tr.). Cycle: Ulster.",
+   "sources": [
+    "celt-t301012",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Ulster",
+   "translator": "Cecile O'Rahilly (tr.)",
+   "url": "https://celt.ucc.ie/published/T301012/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t6",
+   "text": "English translation: Táin Bó Cúalnge from the Book of Leinster — Cecile O'Rahilly (tr.) - CELT: academic/teaching use with consent. Cycle: Ulster.",
+   "sources": [
+    "celt-t301035",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Ulster",
+   "translator": "Cecile O'Rahilly (tr.) - CELT: academic/teaching use with consent",
+   "url": "https://celt.ucc.ie/published/T301035/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t7",
+   "text": "English translation: Deirdre [Longes mac nUislenn] — Douglas Hyde (tr.). Cycle: Ulster.",
+   "sources": [
+    "celt-t301020a",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Ulster",
+   "translator": "Douglas Hyde (tr.)",
+   "url": "https://celt.ucc.ie/published/T301020A/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t8",
+   "text": "English translation: The Destruction of Da Derga's Hostel — Whitley Stokes (tr., public domain). Cycle: Kings.",
+   "sources": [
+    "celt-t301017a",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Kings",
+   "translator": "Whitley Stokes (tr., public domain)",
+   "url": "https://celt.ucc.ie/published/T301017A/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t9",
+   "text": "English translation: The Death of Finn Mac Cumaill — Kuno Meyer (tr.). Cycle: Fenian.",
+   "sources": [
+    "celt-t303003",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Fenian",
+   "translator": "Kuno Meyer (tr.)",
+   "url": "https://celt.ucc.ie/published/T303003/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t10",
+   "text": "English translation: The Boyish Exploits of Finn — Kuno Meyer (tr.). Cycle: Fenian.",
+   "sources": [
+    "celt-t303023",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Fenian",
+   "translator": "Kuno Meyer (tr.)",
+   "url": "https://celt.ucc.ie/published/T303023/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t11",
+   "text": "English translation: The Quarrel between Finn and Oisín — Kuno Meyer (tr.). Cycle: Fenian.",
+   "sources": [
+    "celt-t303011",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Fenian",
+   "translator": "Kuno Meyer (tr.)",
+   "url": "https://celt.ucc.ie/published/T303011/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t12",
+   "text": "English translation: The Enumeration of Finn's People — Standish Hayes O'Grady (tr.). Cycle: Fenian.",
+   "sources": [
+    "celt-t303019",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Fenian",
+   "translator": "Standish Hayes O'Grady (tr.)",
+   "url": "https://celt.ucc.ie/published/T303019/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t13",
+   "text": "English translation: Buile Shuibhne (The Frenzy of Suibhne) — J.G. O'Keeffe (tr., 1913). Cycle: Kings.",
+   "sources": [
+    "celt-t302018",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Kings",
+   "translator": "J.G. O'Keeffe (tr., 1913)",
+   "url": "https://celt.ucc.ie/published/T302018/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t14",
+   "text": "English translation: The Irish Ordeals, Cormac's Adventure in the Land of Promise — Whitley Stokes (tr.). Cycle: Kings.",
+   "sources": [
+    "celt-t302000",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Kings",
+   "translator": "Whitley Stokes (tr.)",
+   "url": "https://celt.ucc.ie/published/T302000/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t15",
+   "text": "English translation: The Instructions of King Cormac Mac Airt (Tecosca Cormaic) — Kuno Meyer (tr.). Cycle: Kings.",
+   "sources": [
+    "celt-t503001",
+    "celt-list"
+   ],
+   "label": "evidence",
+   "cycle": "Kings",
+   "translator": "Kuno Meyer (tr.)",
+   "url": "https://celt.ucc.ie/published/T503001/index.html",
+   "licence_note": "Verify CELT permission before reproducing text; link freely."
+  },
+  {
+   "id": "t16",
+   "text": "English translation: Acallamh na Senórach ('The Colloquy with the Ancients') in Silva Gadelica vol. II, S.H. O'Grady 1892 (Irish text vol. I pp.94-233; translation vol. II pp.101-265). Cycle: Fenian.",
+   "sources": [
+    "ia-silva",
+    "ucc-iso-acallam"
+   ],
+   "label": "evidence",
+   "cycle": "Fenian",
+   "translator": "Standish Hayes O'Grady (1892, public domain)",
+   "url": "https://archive.org/details/silvagadelicaixx02ogra"
+  },
+  {
+   "id": "t17",
+   "text": "English translation: Lebor Gabála Érenn (Book of the Taking of Ireland), R.A.S. Macalister, Irish Texts Society, 5 vols (1938-56). Cycle: Mythological.",
+   "sources": [
+    "ia-lge1"
+   ],
+   "label": "evidence",
+   "cycle": "Mythological",
+   "translator": "R.A.S. Macalister",
+   "url": "https://archive.org/details/leborgablare01macauoft",
+   "licence_note": "OCR text; copyright status varies by jurisdiction"
+  }
+ ],
+ "people": [
+  {
+   "id": "pe1",
+   "text": "Lug: hero of the Mythological Cycle.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe2",
+   "text": "Nuadu Airgetlám (of the Silver Hand): leader of the Tuatha Dé Danann.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe3",
+   "text": "Midir and Étaín: lovers in Tochmarc Étaíne.",
+   "sources": [
+    "enc-myth",
+    "celt-t300012"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe4",
+   "text": "Children of Lir: transformed into swans by Aoife; 900 years of exile.",
+   "sources": [
+    "enc-myth",
+    "celt-t300014"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe5",
+   "text": "Cú Chulainn: chief hero of the Ulster Cycle and the Táin.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe6",
+   "text": "Medb of Connacht: initiates war to seize the Donn Cuailnge.",
+   "sources": [
+    "enc-myth",
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe7",
+   "text": "Conchobar mac Nessa: king of Ulster, betrothed to Deirdre.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe8",
+   "text": "Deirdre and Noíse: the third Sorrow of Storytelling.",
+   "sources": [
+    "enc-myth",
+    "celt-t301020a"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe9",
+   "text": "Ferdiad: Cú Chulainn's friend, fought in the duel at the ford.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe10",
+   "text": "Fergus mac Róich: Ulster Cycle hero.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence (cycle membership); verify detail against translation before publishing",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe11",
+   "text": "Fionn mac Cumhaill: leader of the Fianna.",
+   "sources": [
+    "enc-myth",
+    "celt-t303023",
+    "celt-t303003"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe12",
+   "text": "Suibhne Geilt: king driven mad, hero of Buile Shuibhne (Cycle of the Kings).",
+   "sources": [
+    "enc-myth",
+    "celt-t302018"
+   ],
+   "label": "evidence",
+   "figure_type": "mythological"
+  },
+  {
+   "id": "pe13",
+   "text": "R.A.S. Macalister: editor/translator of Lebor Gabála Érenn (ITS).",
+   "sources": [
+    "ia-lge1"
+   ],
+   "label": "evidence",
+   "figure_type": "scholar"
+  },
+  {
+   "id": "pe14",
+   "text": "Cecile O'Rahilly: translator of both Táin recensions on CELT.",
+   "sources": [
+    "celt-t301012"
+   ],
+   "label": "evidence",
+   "figure_type": "scholar"
+  },
+  {
+   "id": "pe15",
+   "text": "Barry Raftery (UCD): excavated the Corlea Trackway.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "figure_type": "scholar"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "tl1",
+   "text": "c. 3800 BC (almost 6,000 years ago) - Céide Fields stone-walled field systems.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": -3800
+  },
+  {
+   "id": "tl2",
+   "text": "c. 3200 BC - Newgrange built (middle Neolithic).",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": -3200
+  },
+  {
+   "id": "tl3",
+   "text": "c. 3000 BC - Loughcrew passage tombs.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": -3000
+  },
+  {
+   "id": "tl4",
+   "text": "148 BC - Corlea Trackway (Iron Age oak road) built.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": -148
+  },
+  {
+   "id": "tl5",
+   "text": "Iron Age - Royal Sites developed as large-scale ceremonial complexes.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "inference (no exact date in source)",
+   "year": -300
+  },
+  {
+   "id": "tl6",
+   "text": "Early centuries AD - Tara at the height of its power.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": 200
+  },
+  {
+   "id": "tl7",
+   "text": "Early medieval - myths written down by Christian scribes.",
+   "sources": [
+    "enc-myth",
+    "tcd-myth"
+   ],
+   "label": "evidence",
+   "year": 700
+  },
+  {
+   "id": "tl8",
+   "text": "8th-9th c. - Grianán of Aileach stone fort, seat of Cenél nEógain.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence",
+   "year": 800
+  },
+  {
+   "id": "tl9",
+   "text": "19th century - scholars divide the tales into four cycles.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence",
+   "year": 1850
+  },
+  {
+   "id": "tl10",
+   "text": "1863 - O'Curry's translation of the Fate of the Children of Lir.",
+   "sources": [
+    "celt-t300014"
+   ],
+   "label": "evidence",
+   "year": 1863
+  },
+  {
+   "id": "tl11",
+   "text": "1892 - O'Grady's Silva Gadelica (Acallamh translation).",
+   "sources": [
+    "ia-silva"
+   ],
+   "label": "evidence",
+   "year": 1892
+  },
+  {
+   "id": "tl12",
+   "text": "1993 - Brú na Bóinne inscribed; 1996 Sceilg Mhichíl inscribed.",
+   "sources": [
+    "unesco-boyne",
+    "unesco-skellig"
+   ],
+   "label": "evidence",
+   "year": 1993
+  }
+ ],
+ "further_reading": [
+  {
+   "id": "fr1",
+   "text": "CELT, UCC - corpus of Irish texts and translations.",
+   "sources": [
+    "celt-list"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr2",
+   "text": "Irish Sagas Online (UCC).",
+   "sources": [
+    "ucc-iso-acallam"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr3",
+   "text": "NMS Monuments to Visit open data and Historic Environment Viewer.",
+   "sources": [
+    "nms-mtv"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr4",
+   "text": "UNESCO Royal Sites of Ireland tentative listing.",
+   "sources": [
+    "unesco-royal"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr5",
+   "text": "TCD Library 'Upon the Wild Waves' exhibition.",
+   "sources": [
+    "tcd-myth"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr6",
+   "text": "Encyclopedia of Irish History and Culture: Myth and Saga.",
+   "sources": [
+    "enc-myth"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr7",
+   "text": "Cambridge Archaeological Journal on Celtic origins debate.",
+   "sources": [
+    "cam-celt"
+   ],
+   "label": "evidence"
+  },
+  {
+   "id": "fr8",
+   "text": "Macalister, Lebor Gabála Érenn (ITS) on Internet Archive.",
+   "sources": [
+    "ia-lge1"
+   ],
+   "label": "evidence"
+  }
+ ]
+}
