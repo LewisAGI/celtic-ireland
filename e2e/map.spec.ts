@@ -79,6 +79,10 @@ test('places without coordinates stay in the list', async ({ page }) => {
   await expect(page.locator('[data-unmapped="pl10"]')).toBeVisible();
   await expect(page.locator('#entry-pl10 .entry-text')).toContainText('Navan Fort / Emain Macha');
   await expect(page.locator('[data-entry="pl16"] .badge[data-badge="inference"]')).toBeVisible();
+  await expect(page.locator('[data-entry="pl8"] .badge[data-badge="inference"]')).toBeVisible();
+  for (const id of ['pl11', 'pl12', 'pl13']) {
+    await expect(page.locator(`[data-entry="${id}"] .badge[data-badge="in-the-tale"]`)).toHaveText('in the tale');
+  }
   await page.locator('.pin[data-id="pl1"]').click({ force: true });
   await expect(page.locator('#entry-pl1')).toContainText('Brú na Bóinne');
   await expect(page.locator('#entry-pl1 .badge[data-badge="evidence"]')).toBeVisible();
@@ -121,7 +125,11 @@ test('cycles, timeline, layers, and the sources notice', async ({ page }) => {
   await page.getByRole('button', { name: 'People' }).click();
   await expect(page).toHaveURL(/#people$/);
   await expect(page.locator('#entry-pe1')).toContainText('Lug');
-  await expect(page.locator('#entry-pe1 .badge-note')).toContainText('verify detail');
+  await expect(page.locator('#entry-pe1 .badge[data-badge="unverified-detail"]')).toHaveText('unverified detail');
+  await expect(page.locator('#entry-pe1 .badge-note')).toHaveText(
+    'Belongs to this cycle; details not yet checked against a translation',
+  );
+  await expect(page.locator('body')).not.toContainText('verify detail against translation');
   await expect(page.locator('[data-people="scholar"]')).toContainText('Macalister');
 
   await page.getByRole('button', { name: 'Further reading' }).click();

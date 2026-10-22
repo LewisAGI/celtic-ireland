@@ -20,7 +20,9 @@ import {
   sectionEntries,
   timelineEntries,
   timelineLabel,
+  taleMark,
   unmappedEntries,
+  UNVERIFIED_QUALIFIER,
   validateAtlas,
   visiblePins,
 } from '../src/content';
@@ -69,7 +71,7 @@ describe('v3 pack', () => {
       entry.sources.forEach((sourceId) => {
         expect(atlas.sources.some((source) => source.id === sourceId)).toBe(true);
       });
-      expect(['evidence', 'inference', 'abstract-only']).toContain(badgeFor(entry.label));
+      expect(['evidence', 'inference', 'abstract-only', 'unverified-detail']).toContain(badgeFor(entry.label));
     });
   });
 
@@ -164,17 +166,28 @@ describe('v3 pack', () => {
     expect(positions.get('pl6')!.offsetY).toBe(0);
   });
 
-  it('badges the Celts debate as abstract-only and keeps the verify qualifier', () => {
+  it('badges the Celts debate as abstract-only and hides the verify instruction', () => {
     const debate = debateEntries(atlas);
     expect(debate.map((entry) => entry.id)).toEqual(['h1', 'h2']);
     debate.forEach((entry) => expect(badgeFor(entry.label)).toBe('abstract-only'));
     expect(labelNote(debate[0].label)).toMatch(/not read/);
     const cooley = sectionEntries(atlas, 'places').find((entry) => entry.id === 'pl16')!;
     expect(badgeFor(cooley.label)).toBe('inference');
-    const lug = sectionEntries(atlas, 'people').find((entry) => entry.id === 'pe1')!;
-    expect(badgeFor(lug.label)).toBe('evidence');
-    expect(labelNote(lug.label)).toMatch(/verify detail/);
+    expect(badgeFor(findEntry(atlas, 'pl8')!.label)).toBe('inference');
+    const unverified = ['pe1', 'pe2', 'pe5', 'pe7', 'pe9', 'pe10'];
+    unverified.forEach((id) => {
+      const entry = findEntry(atlas, id)!;
+      expect(entry.label).toMatch(/verify detail against translation before publishing/);
+      expect(badgeFor(entry.label)).toBe('unverified-detail');
+      expect(labelNote(entry.label)).toBe(UNVERIFIED_QUALIFIER);
+      expect(labelNote(entry.label)).not.toMatch(/verify detail/i);
+    });
+    expect(badgeFor(findEntry(atlas, 'pe3')!.label)).toBe('evidence');
+    expect(labelNote(findEntry(atlas, 'pe3')!.label)).toBeNull();
     expect(badgeFor('inference (abstract-level)')).toBe('abstract-only');
+    ['pl11', 'pl12', 'pl13'].forEach((id) => expect(taleMark(findEntry(atlas, id)!)).toBe('in the tale'));
+    expect(taleMark(findEntry(atlas, 'pl9')!)).toBeNull();
+    expect(taleMark(findEntry(atlas, 'pl8')!)).toBeNull();
   });
 
   it('places periods, myth links, and the timeline years where the pack says so', () => {

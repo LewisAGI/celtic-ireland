@@ -44,19 +44,20 @@ Counts in this pack: history 7, cycles 7, places 40, primary texts 17, people 15
 
 ### Badge
 
-The raw `label` is kept. The badge is one of `evidence`, `inference`, or `abstract-only`:
+The raw `label` is kept. The badge is one of `evidence`, `inference`, `abstract-only`, or `unverified detail`:
 
+- `unverified detail` when the label says to verify the detail against a translation before publishing. The interface shows “Belongs to this cycle; details not yet checked against a translation” and does not show that instruction
 - `abstract-only` when the label says the source was an abstract, a summary, a snippet, or that the full text was not read
 - otherwise `inference` when the label says inference
 - otherwise `evidence`
 
-`abstract-only` wins over `inference`, so a conclusion taken from an unread paper is not badged as if the paper had been read. A parenthetical in the raw label is shown beside the badge.
+`abstract-only` wins over `inference`, so a conclusion taken from an unread paper is not badged as if the paper had been read. A parenthetical in the raw label is shown beside the badge, except the verify-before-publishing instruction, which is replaced by the public sentence above.
 
 ### Coordinates
 
 `source_format` is the string the decimal pair was taken from. UNESCO values are DMS, for example `N53 41 40.9 W6 28 31.8`, and those decimals are site centroids. National Monuments Service “Monuments to Visit” points are the published decimals (22 mapped places cite `nms-mtv`).
 
-32 places are pinned. Eight are not: `pl3`, `pl4`, `pl10`, `pl11`, `pl12`, `pl13`, `pl15`, `pl16`. Tara (`pl9`, `pl19`) is pinned. The older Navan Fort note `pl10` has no coordinates; `pl39` is the converted Irish Grid reference and is labelled inference. Carrowkeel Cairn F (`pl40`) is the same kind of conversion, also labelled inference. Lough Derravaragh still has no coordinates.
+32 places are pinned. Eight are not: `pl3`, `pl4`, `pl10`, `pl11`, `pl12`, `pl13`, `pl15`, `pl16`. Tara (`pl9`, `pl19`) is pinned. The older Navan Fort note `pl10` has no coordinates; `pl39` is the converted Irish Grid reference and is labelled inference. Carrowkeel Cairn F (`pl40`) is the same kind of conversion, also labelled inference. Rathcroghan (`pl8`) is labelled inference because the pack sentence marks Medb’s Cruachan as an inference. The Children of Lir exile places (`pl11`, `pl12`, `pl13`) are marked “in the tale”. Lough Derravaragh still has no coordinates.
 
 ### Periods
 

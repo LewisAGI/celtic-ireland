@@ -1,4 +1,4 @@
-export type Badge = 'evidence' | 'inference' | 'abstract-only';
+export type Badge = 'evidence' | 'inference' | 'abstract-only' | 'unverified-detail';
 
 export type EntryStatus = 'sourced' | 'placeholder' | 'example';
 

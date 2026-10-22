@@ -82,16 +82,17 @@ html, body, #root {
   padding: 0;
   cursor: pointer;
   color: var(--ink);
-  background: rgba(14, 18, 26, 0.72);
+  flex: none;
+  background: rgba(14, 18, 26, 0.92);
   border: 1px solid var(--glass-line);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
 }
 
 .icon-button svg { width: 22px; height: 22px; display: block; }
 
-.icon-button[aria-current="true"] {
-  background: rgba(226, 179, 26, 0.18);
+.icon-button[aria-current="true"],
+.icon-button[aria-pressed="true"] {
+  background: rgba(58, 46, 12, 0.94);
   border-color: rgba(226, 179, 26, 0.7);
 }
 
@@ -111,7 +112,6 @@ html, body, #root {
   background: var(--glass);
   border: 1px solid var(--glass-line);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
 }
 
 .tool-pop[data-pop="search"] {
@@ -146,7 +146,6 @@ html, body, #root {
   border: 1px solid var(--glass-line);
   border-radius: 16px;
   box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
 }
 
 #app[data-layout="panel"] .sheet {
@@ -193,8 +192,14 @@ html, body, #root {
   top: auto;
   right: auto;
   bottom: auto;
-  align-self: flex-end;
-  max-height: 42vh;
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #app[data-layout="sheet"] .sheet[data-expanded="true"] {
@@ -311,6 +316,8 @@ html, body, #root {
 .badge-evidence { background: #1e3a32; color: #d5f5e8; }
 .badge-inference { background: #3a3218; color: #f3e2b0; }
 .badge-abstract-only { background: #3a2a22; color: #f3d2c4; border: 1px solid #e0b4a2; }
+.badge-unverified-detail { background: #243044; color: #d5e4f5; border: 1px solid #9eb6d4; }
+.badge-tale { background: #2c2438; color: #eadcf8; }
 .badge-note { color: var(--muted); font-size: 12px; }
 
 .example-data {

@@ -2,7 +2,7 @@
 
 An interactive globe of places, cycles, people, and the debate over the name ‘Celt’, drawn from the sourced pack in `data/`.
 
-The pack is the v3 expansion: 106 entries and 32 sources. Pins are the 32 places that publish coordinates. Twenty-two of those cite National Monuments Service “Monuments to Visit” (`nms-mtv`). Navan Fort (`pl39`) and Carrowkeel Cairn F (`pl40`) are converted grid references and stay labelled inference. Eight places still have no coordinates and are listed, not pinned.
+The pack is the v3 expansion: 106 entries and 32 sources. Pins are the 32 places that publish coordinates. Twenty-two of those cite National Monuments Service “Monuments to Visit” (`nms-mtv`). Navan Fort (`pl39`), Carrowkeel Cairn F (`pl40`), and Rathcroghan (`pl8`) stay labelled inference. The Children of Lir exile places are marked “in the tale”. Eight places still have no coordinates and are listed, not pinned. Figures whose pack label still says to verify the detail against a translation are badged “unverified detail”, with a public note, and that instruction is not shown.
 
 Story pages, site pages, people, the timeline, a glossary, search, and side-by-side comparisons are all built from those entries. English translations, including the Acallam (`t16`) and Lebor Gabála Érenn (`t17`), are links. The Book of Leinster Táin is restricted to academic use and is linked, not quoted. The pack has no pronunciation recordings, so none are shown.
 

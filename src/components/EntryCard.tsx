@@ -1,4 +1,4 @@
-import { entryTitle, exampleBanner, isMapped } from '../content';
+import { entryTitle, exampleBanner, isMapped, taleMark } from '../content';
 import type { Atlas, Entry } from '../types';
 import { Badge } from './Badge';
 
@@ -42,7 +42,7 @@ export function EntryCard({
           )}
         </h2>
       ) : null}
-      <Badge label={entry.label} />
+      <Badge label={entry.label} tale={taleMark(entry)} />
       {banner ? <p className="example-data">{banner}</p> : null}
       <p className="entry-text">{entry.text}</p>
       {entry.uncertainty ? (

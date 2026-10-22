@@ -38,12 +38,20 @@ export interface CharacterLink {
   cycleName: string;
 }
 
+/** Shown for cycle membership that still has to be checked against a translation. */
+export const UNVERIFIED_QUALIFIER = 'Belongs to this cycle; details not yet checked against a translation';
+
+/** Pack instruction for editors. It is never rendered. */
+const VERIFY_INSTRUCTION = /verify detail against translation/i;
+
 /**
  * abstract-only wins when the pack says the text was not read in full.
+ * A verify-before-publishing label is unverified detail, not plain evidence.
  * Otherwise an inference label stays inference, and evidence stays evidence.
  */
 export function badgeFor(label: string): Badge {
   const value = label.trim().toLowerCase();
+  if (VERIFY_INSTRUCTION.test(value)) return 'unverified-detail';
   if (
     value.includes('abstract') ||
     value.includes('summary') ||
@@ -57,12 +65,22 @@ export function badgeFor(label: string): Badge {
   return 'evidence';
 }
 
-/** Qualifier after the leading evidence or inference word, when the pack wrote one. */
+/**
+ * Public qualifier beside the badge.
+ * The verify-before-publishing instruction is replaced with UNVERIFIED_QUALIFIER.
+ */
 export function labelNote(label: string): string | null {
+  if (badgeFor(label) === 'unverified-detail') return UNVERIFIED_QUALIFIER;
   const stripped = label.replace(/^(evidence|inference)\b/i, '').trim();
-  if (!stripped) return null;
+  if (!stripped || VERIFY_INSTRUCTION.test(stripped)) return null;
   const unwrapped = stripped.replace(/^\((.*)\)$/s, '$1').trim();
-  return unwrapped || null;
+  if (!unwrapped || VERIFY_INSTRUCTION.test(unwrapped)) return null;
+  return unwrapped;
+}
+
+/** The Children of Lir exile places are settings in the tale, not surveyed pins. */
+export function taleMark(entry: Entry): 'in the tale' | null {
+  return /exile of the Children of Lir/i.test(entry.text) ? 'in the tale' : null;
 }
 
 export function isExample(entry: Entry): boolean {
